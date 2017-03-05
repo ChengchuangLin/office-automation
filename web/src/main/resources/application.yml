@@ -1,0 +1,27 @@
+server:
+  port: 80
+spring:
+#  cache:
+#    type: guava
+#    cache-names: test
+#    guava:
+#      spec: maximumSize=500,expireAfterWrite=360m
+  datasource:
+    url: jdbc:mysql://localhost:3306/oa?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+    username: root
+    password:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    properties:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+logging:
+  level:
+    com.keveon.architecture: trace
+    com.mysql: warn
+    org.hibernate: warn
+    org.springframework: warn

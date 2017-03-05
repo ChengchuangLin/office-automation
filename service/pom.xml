@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.keveon.oa</groupId>
+        <artifactId>office-automation</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>..</relativePath>
+    </parent>
+
+    <artifactId>service</artifactId>
+    <name>Service Layer</name>
+    <description>Service layer project for Office Automation</description>
+
+    <dependencies>
+        <!-- Commons dependency -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>commons</artifactId>
+        </dependency>
+
+        <!-- Model dependency -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>model</artifactId>
+        </dependency>
+
+        <!-- Repository dependency -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>repository</artifactId>
+        </dependency>
+    </dependencies>
+</project>
